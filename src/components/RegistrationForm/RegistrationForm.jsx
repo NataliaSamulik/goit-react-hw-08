@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/operations';
 import { useId } from 'react';
 
-import css from './RegistrationForm.module.css'
+import css from './RegistrationForm.module.css';
 
 const initialValues = {
   username: '',
@@ -19,7 +19,7 @@ const RegistrationForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    console.log(values)
+    console.log(values);
     dispatch(
       register({
         name: values.username,
@@ -33,7 +33,7 @@ const RegistrationForm = () => {
 
   return (
     <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-      <Form>
+      <Form className={css.form}>
         <div className={css.inputBox}>
           <label htmlFor={usernameFieldId}>Username</label>
           <Field type="text" name="username" id={usernameFieldId} />
@@ -46,7 +46,9 @@ const RegistrationForm = () => {
           <label htmlFor={passwordFieldId}>Password</label>
           <Field type="text" name="password" id={passwordFieldId} />
         </div>
-        <button type="submit">Register</button>
+        <button className={css.btnForm} type="submit">
+          Register
+        </button>
       </Form>
     </Formik>
   );

@@ -1,0 +1,14 @@
+.form {
+  padding: 8px;
+  width: 30%;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnForm {
+  cursor: pointer;
+  margin-top: 10px;
+}

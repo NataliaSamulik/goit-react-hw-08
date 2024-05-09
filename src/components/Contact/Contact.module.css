@@ -10,7 +10,13 @@
   gap: 8px;
 }
 
-.btnDelete {
+.btn {
   cursor: pointer;
-  height: 30px;
+  background-color: white;
+  border: none;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,17 @@
+.menuBox {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 20px;
+}
+
+.btnLogOut {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+}
+
+.message {
+  font-size: 16px;
+}
